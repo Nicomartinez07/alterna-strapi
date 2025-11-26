@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Settings"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "nombre_local": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "horarios": {
+      "type": "blocks"
+    },
+    "takeaway_url_glovo": {
+      "type": "string"
+    },
+    "takeaway_url_uber": {
+      "type": "string"
+    },
+    "google_maps_embed_url": {
+      "type": "text"
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tagline": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+    "kind": "collectionType",
+    "collectionName": "market_items",
+    "info": {
+        "singularName": "market-item",
+        "pluralName": "market-items",
+        "displayName": "Market Item"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "photo": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "price": {
+            "type": "decimal",
+            "required": true
+        },
+        "vendor_name": {
+            "type": "string"
+        },
+        "vendor_contact_whatsapp": {
+            "type": "string"
+        },
+        "vendor_instagram": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "available_from": {
+            "type": "date"
+        },
+        "available_to": {
+            "type": "date"
+        },
+        "visible": {
+            "type": "boolean",
+            "default": true
+        }
+    }
+}
