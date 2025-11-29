@@ -9,10 +9,19 @@
     "options": {
         "draftAndPublish": true
     },
-    "pluginOptions": {},
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
     "attributes": {
         "title": {
             "type": "string",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
             "required": true
         },
         "slug": {
@@ -20,21 +29,38 @@
             "targetField": "title",
             "required": true
         },
-        "description": {
-            "type": "blocks"
-        },
         "price": {
             "type": "decimal",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
             "required": true
         },
         "ingredients": {
-            "type": "text"
+            "type": "text",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
         },
         "allergens": {
-            "type": "text"
+            "type": "text",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
         },
         "photo": {
             "type": "media",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
             "multiple": false,
             "allowedTypes": [
                 "images",
@@ -45,18 +71,38 @@
         },
         "is_on_menu": {
             "type": "boolean",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
             "default": true
         },
         "is_takeaway_available": {
             "type": "boolean",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
             "default": true
         },
         "visible": {
             "type": "boolean",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
             "default": true
         },
         "order": {
             "type": "integer",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
             "default": 0
         },
         "product_category": {
@@ -64,6 +110,14 @@
             "relation": "manyToOne",
             "target": "api::product-category.product-category",
             "inversedBy": "products"
+        },
+        "description": {
+            "type": "text",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
         }
     }
 }
